@@ -20,7 +20,7 @@ The site is built using the Dimension template from HTML5 UP, customized to fit 
 
 ## Feedback and Contributions
 
-Your feedback is valued! If you have suggestions or want to contribute, please feel free to fork the repository and submit a pull request.
+Please provide feedback on my work.
 
 ## License
 
