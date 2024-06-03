@@ -1,186 +1,101 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Singh</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-<html>
-	<head>
-		<title>Nikhil Singh</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>	
-	<body class="is-preload">
+	<style>
+		body {
+			transition: background-color 0.5s ease, color 0.5s ease;
+		}
+		body.dark-mode {
+			background-color: #121212;
+			color: #ffffff;
+		}
+	</style>
+	
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Nikhil Singh</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+	<button onclick="toggleDarkMode()" class="btn btn-sm" id="darkModeToggle">
+		<img src="sun_icon.png" alt="Sun" id="toggleIcon">
+	</button>		
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#competitions">Competitions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#articles">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tools">Tools</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Nikhil Singh</h1>
-								<p>Curious Mind</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#projects">Projects</a></li>
-								<!-- <li><a href="#philosophy">Philosophy</a></li> -->
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-						</nav>
-					</header>
+    <div id="home" class="container mt-4">
+        <h1>Nikhil Singh</h1>
+        <p>Expert in applied machine learning and AI, specializing in practical ML solutions and consulting.</p>
+    </div>
+    
+    <div id="projects" class="container mt-4">
+        <h2>Projects</h2>
+        <!-- List projects here -->
+    </div>
+    
+    <div id="competitions" class="container mt-4">
+        <h2>Competitions</h2>
+        <!-- List competitions here -->
+    </div>
+    
+    <div id="articles" class="container mt-4">
+        <h2>Articles</h2>
+        <!-- List articles here -->
+    </div>
+    
+    <div id="tools" class="container mt-4">
+        <h2>Tools</h2>
+        <!-- List tools and calculators here -->
+    </div>
+    
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">Place your footer text here.</span>
+        </div>
+    </footer>
 
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Passionate about leveraging data to solve complex problems. My journey is about constant learning and applying knowledge to innovate and make an impact. Excited by the potential of AI and machine learning in shaping the future. I am also deeply interested in philosophy and exploring the larger questions of existence.</p>
-							</article>
-
-						<!-- Projects -->
-							<article id="projects">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>From building predictive models for the finance industry to developing algorithms that understand human behavior, my projects span a wide range of interests. Here’s a glimpse into some of the work I've done.</p>
-							</article>
-
-						<!-- Philosophy -->
-						<!-- <article id="philosophy">
-							<h2 class="major">Philosophy</h2>
-							<span class="image main"><img src="images/pic03.jpg" alt="Philosophy" /></span>
-							<p>Exploring the realms of Vedic scriptures to modern existential questions, my philosophical inquiries revolve around understanding the essence of being and consciousness. Join me in this exploration.</p>
-						</article> -->
-
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="https://twitter.com/nikhilsingh_1" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://www.linkedin.com/in/singh-nikhil/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/nikhilsingh13" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
-
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Insights</h3>
-									<p>Exploring the beauty of simplicity in coding and writing. Embrace minimalism.</p>
-									<blockquote>Less is more. - Ludwig Mies van der Rohe</blockquote>
-								</section>
-								
-
-								<section>
-									<h3 class="major">Connect & Engage</h3>
-									
-									<p>Find me on social media and let's start a conversation.</p>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-								
-									<p>Interested in collaborating? Let's talk.</p>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Get In Touch</a></li>
-									</ul>
-								</section>
-								
-
-								<section>
-									<h3 class="major">Highlighted Projects</h3>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Project</th>
-													<th>Description</th>
-													<th>Impact</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Initial Universe Conditions Prediction Box</td>
-													<td>Developed a model to predict initial conditions of the universe, leveraging astrophysics data and advanced machine learning techniques.</td>
-													<td>Provided new insights into the early universe, supporting theoretical astrophysics research.</td>
-												</tr>
-												<!-- Placeholder for other projects -->
-											</tbody>
-										</table>
-									</div>
-								</section>
-								
-
-								<section>
-									<h3 class="major">Actions</h3>
-									<ul class="actions">
-										<li><a href="your-resume-link.pdf" class="button primary icon solid fa-download">Download Resume</a></li>
-										<li><a href="#contact" class="button">Contact Me</a></li>
-										<li><a href="your-projects-link" class="button">View Projects</a></li>
-									</ul>
-								</section>
-								
-
-								<section>
-									<h3 class="major">Let's Connect</h3>
-									<p>Interested in discussing opportunities, collaborations, or just want to say hi? Let's connect on LinkedIn.</p>
-									<ul class="actions">
-										<li><a href="https://www.linkedin.com/in/singh-nikhil/" class="button primary">Connect on LinkedIn</a></li>
-									</ul>
-								</section>								
-
-							</article>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-    					<p class="copyright">
-							&copy; 2024 Nikhil Singh. All rights reserved. | Original design by <a href="https://html5up.net">HTML5 UP</a>, customized by Nikhil Singh.
-						</p>
-					</footer>
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script>
+		function toggleDarkMode() {
+			var body = document.body;
+			var toggleIcon = document.getElementById('toggleIcon');
+			body.classList.toggle('dark-mode');
+			if (body.classList.contains('dark-mode')) {
+				toggleIcon.src = 'moon_icon.png'; // Update to path of your moon icon
+				toggleIcon.alt = 'Moon';
+			} else {
+				toggleIcon.src = 'sun_icon.png'; // Update to path of your sun icon
+				toggleIcon.alt = 'Sun';
+			}
+		}
+	</script>
+	
+</body>
 </html>

@@ -10,6 +10,7 @@ Welcome to my personal portfolio on GitHub Pages. This site showcases my profess
 
 ## Technologies Used
 
+- Python
 - HTML5
 - CSS3
 - JavaScript
@@ -26,12 +27,8 @@ Please provide feedback on my work.
 
 This project is open source and available under the [LICENSE](LICENSE) included with this repository.
 
-Visit my portfolio at: `http://nikhilsingh13.github.io`
+Visit my portfolio at: `http://nikhilsingh.io`
 
 Thank you for stopping by!
 
 Nikhil
-
-
-
-> This site was built using the Dimension template by HTML5 UP, licensed under CC BY 3.0.g
