@@ -4,98 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nikhil Singh</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-	<style>
-		body {
-			transition: background-color 0.5s ease, color 0.5s ease;
-		}
-		body.dark-mode {
-			background-color: #121212;
-			color: #ffffff;
-		}
-	</style>
-	
-
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #121212;
+            color: #fff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        a {
+            color: #0d6efd;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .theme-toggle {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+        .theme-toggle img {
+            width: 24px;
+            height: 24px;
+        }
+        .light-mode {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Nikhil Singh</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-	<button onclick="toggleDarkMode()" class="btn btn-sm" id="darkModeToggle">
-		<img src="sun_icon.png" alt="Sun" id="toggleIcon">
-	</button>		
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#competitions">Competitions</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#articles">Articles</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#tools">Tools</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div id="home" class="container mt-4">
+    <button class="theme-toggle" onclick="toggleDarkMode()">
+        <img src="images/sun_icon.png" alt="Sun" id="theme-icon">
+    </button>
+    <header>
         <h1>Nikhil Singh</h1>
         <p>Expert in applied machine learning and AI, specializing in practical ML solutions and consulting.</p>
-    </div>
-    
-    <div id="projects" class="container mt-4">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#competitions">Competitions</a></li>
+            <li><a href="#tools">Tools</a></li>
+        </ul>
+    </nav>
+    <section id="projects">
         <h2>Projects</h2>
-        <!-- List projects here -->
-    </div>
-    
-    <div id="competitions" class="container mt-4">
-        <h2>Competitions</h2>
-        <!-- List competitions here -->
-    </div>
-    
-    <div id="articles" class="container mt-4">
+        <p>Details about my projects...</p>
+    </section>
+    <section id="articles">
         <h2>Articles</h2>
-        <!-- List articles here -->
-    </div>
-    
-    <div id="tools" class="container mt-4">
+        <p>Insights into Machine Learning and more...</p>
+    </section>
+    <section id="competitions">
+        <h2>Competitions</h2>
+        <p>My involvement in various competitions...</p>
+    </section>
+    <section id="tools">
         <h2>Tools</h2>
-        <!-- List tools and calculators here -->
-    </div>
-    
-    <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
-            <span class="text-muted">Place your footer text here.</span>
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script>
-		function toggleDarkMode() {
-			var body = document.body;
-			var toggleIcon = document.getElementById('toggleIcon');
-			body.classList.toggle('dark-mode');
-			if (body.classList.contains('dark-mode')) {
-				toggleIcon.src = 'moon_icon.png'; // Update to path of your moon icon
-				toggleIcon.alt = 'Moon';
-			} else {
-				toggleIcon.src = 'sun_icon.png'; // Update to path of your sun icon
-				toggleIcon.alt = 'Sun';
-			}
-		}
-	</script>
-	
+        <p>Small projects and utilities...</p>
+    </section>
+    <script>
+        function toggleDarkMode() {
+            var icon = document.getElementById('theme-icon');
+            document.body.classList.toggle('light-mode');
+            if (document.body.classList.contains('light-mode')) {
+                icon.src = 'images/sun_icon.png';
+                icon.alt = 'Moon';
+            } else {
+                icon.src = 'images/sun_icon.png';
+                icon.alt = 'Sun';
+            }
+        }
+    </script>
 </body>
 </html>
