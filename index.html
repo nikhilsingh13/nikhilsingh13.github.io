@@ -8,22 +8,42 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             background-color: #121212;
             color: #fff;
             transition: background-color 0.3s, color 0.3s;
+            padding-top: 60px;
         }
-        a {
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .navbar li {
+            padding: 0 10px;
+        }
+        .navbar a {
             color: #0d6efd;
             text-decoration: none;
         }
-        a:hover {
+        .navbar a:hover {
             text-decoration: underline;
         }
         .theme-toggle {
-            position: absolute;
-            top: 10px;
-            right: 10px;
             cursor: pointer;
             border: none;
             background: none;
@@ -36,40 +56,31 @@
             background-color: #f4f4f4;
             color: #333;
         }
+        .content {
+            padding: 20px 10%; /* Consistent padding around content */
+        }
     </style>
 </head>
 <body>
-    <button class="theme-toggle" onclick="toggleDarkMode()">
-        <img src="images/sun_icon.png" alt="Sun" id="theme-icon">
-    </button>
-    <header>
-        <h1>Nikhil Singh</h1>
-        <p>Expert in applied machine learning and AI, specializing in practical ML solutions and consulting.</p>
-    </header>
-    <nav>
+    <div class="navbar">
         <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#articles">Articles</a></li>
-            <li><a href="#competitions">Competitions</a></li>
-            <li><a href="#tools">Tools</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="competitions.html">Competitions</a></li>
+            <li><a href="apps.html">Apps</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
         </ul>
-    </nav>
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Details about my projects...</p>
-    </section>
-    <section id="articles">
-        <h2>Articles</h2>
-        <p>Insights into Machine Learning and more...</p>
-    </section>
-    <section id="competitions">
-        <h2>Competitions</h2>
-        <p>My involvement in various competitions...</p>
-    </section>
-    <section id="tools">
-        <h2>Tools</h2>
-        <p>Small projects and utilities...</p>
-    </section>
+		<button class="theme-toggle" onclick="toggleDarkMode()">
+			<img src="images/sun_icon.png" alt="Sun" id="theme-icon">
+		</button>
+    </div>
+    <div class="content">
+        <header>
+            <h1>Welcome to Nikhil Singh's Portfolio</h1>
+            <p>Experienced in applied machine learning and AI, specializing in practical ML solutions and consulting.</p>
+        </header>
+    </div>
     <script>
         function toggleDarkMode() {
             var icon = document.getElementById('theme-icon');
