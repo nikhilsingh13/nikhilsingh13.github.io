@@ -9,8 +9,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212;
-            color: #fff;
+            background-color: #f4f4f4;
+            color: #333;
             transition: background-color 0.3s, color 0.3s;
             padding-top: 60px;
         }
@@ -52,15 +52,12 @@
             width: 24px;
             height: 24px;
         }
-        .light-mode {
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .content {
-            padding: 20px 10%;
+        .dark-mode {
+            background-color: #121212;
+            color: #fff;
         }
 	.github-icon {
-            margin-left: auto; /* pushes the icon to the right */
+            margin-left: auto;
         }
     </style>
 </head>
@@ -80,7 +77,7 @@
             </a>
         </div>
 	<button class="theme-toggle" onclick="toggleDarkMode()">
-		<img src="images/sun_icon.png" alt="Sun" id="theme-icon">
+		<img src="images/sun_moon_icon.png" alt="Toggle Theme" id="theme-icon">
 	</button>
     </div>
     <div class="content">
@@ -91,15 +88,7 @@
     </div>
     <script>
         function toggleDarkMode() {
-            var icon = document.getElementById('theme-icon');
-            document.body.classList.toggle('light-mode');
-            if (document.body.classList.contains('light-mode')) {
-                icon.src = 'images/sun_icon.png';
-                icon.alt = 'Moon';
-            } else {
-                icon.src = 'images/sun_icon.png';
-                icon.alt = 'Sun';
-            }
+            document.body.classList.toggle('dark-mode');
         }
     </script>
 </body>
