@@ -25,8 +25,6 @@ Please provide feedback on my work.
 
 ## License
 
-This project is open source and available under the [LICENSE](LICENSE) included with this repository.
-
 Visit my portfolio at: `http://nikhilsingh.io`
 
 Thank you for stopping by!

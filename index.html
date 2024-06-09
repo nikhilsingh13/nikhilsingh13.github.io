@@ -36,11 +36,11 @@
         .navbar li {
             padding: 0 10px;
         }
-        .navbar a {
+        .navbar a, .github-icon a {
             color: #0d6efd;
             text-decoration: none;
         }
-        .navbar a:hover {
+        .navbar a:hover, .github-icon a:hover {
             text-decoration: underline;
         }
         .theme-toggle {
@@ -48,7 +48,7 @@
             border: none;
             background: none;
         }
-        .theme-toggle img {
+        .theme-toggle img, .github-icon img {
             width: 24px;
             height: 24px;
         }
@@ -57,7 +57,10 @@
             color: #333;
         }
         .content {
-            padding: 20px 10%; /* Consistent padding around content */
+            padding: 20px 10%;
+        }
+	.github-icon {
+            margin-left: auto; /* pushes the icon to the right */
         }
     </style>
 </head>
@@ -71,9 +74,14 @@
             <li><a href="apps.html">Apps</a></li>
             <li><a href="contact.html">Contact Me</a></li>
         </ul>
-		<button class="theme-toggle" onclick="toggleDarkMode()">
-			<img src="images/sun_icon.png" alt="Sun" id="theme-icon">
-		</button>
+	<div class="github-icon">
+            <a href="https://github.com/nikhilsingh13" target="_blank">
+                <img src="images/github-mark-white.png" alt="GitHub">
+            </a>
+        </div>
+	<button class="theme-toggle" onclick="toggleDarkMode()">
+		<img src="images/sun_icon.png" alt="Sun" id="theme-icon">
+	</button>
     </div>
     <div class="content">
         <header>
