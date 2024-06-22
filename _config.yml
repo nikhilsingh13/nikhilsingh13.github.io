@@ -1,0 +1,23 @@
+title:              Nikhil Singh
+email:              nikhilsingh2009@gmail.com
+description:        I solve problems.
+author:             Nikhil Singh
+baseurl:            ""
+url:                "https://nikhilsingh.io"
+
+# Social Profiles
+twitter_username:   nikhilsingh_1
+github_username:    nikhilsingh13
+linkedin_username: singh-nikhil
+huggingface_username: nikhilsingh
+
+google_analytics: G-BS4J90KXGK
+
+# Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
