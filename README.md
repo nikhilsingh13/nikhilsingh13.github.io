@@ -23,8 +23,6 @@ The site is built using the Dimension template from HTML5 UP, customized to fit 
 
 Please provide feedback on my work.
 
-## License
-
 Visit my portfolio at: `http://nikhilsingh.io`
 
 Thank you for stopping by!
