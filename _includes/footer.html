@@ -9,7 +9,7 @@
         <ul class="list-inline text-center">
           {% if site.email %}
           <li class="list-inline-item">
-            <a href="mailto:{{ site.email }}">
+            <a href="mailto:{{ site.email }}" target="_blank">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
@@ -19,7 +19,7 @@
           {% endif %}
           {% if site.twitter_username %}
           <li class="list-inline-item">
-            <a href="https://twitter.com/{{ site.twitter_username }}">
+            <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
@@ -29,7 +29,7 @@
           {% endif %}
           {% if site.linkedin_username %}
           <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -39,7 +39,7 @@
           {% endif %}
           {% if site.github_username %}
           <li class="list-inline-item">
-            <a href="https://github.com/{{ site.github_username }}">
+            <a href="https://github.com/{{ site.github_username }}" target="_blank">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -49,14 +49,19 @@
           {% endif %}
           {% if site.huggingface_username %}
           <li class="list-inline-item">
-            <a href="https://huggingface.co/{{ site.huggingface_username }}" title="Hugging Face">
+            <a href="https://huggingface.co/{{ site.huggingface_username }}" target="_blank" title="Hugging Face">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <img src="/img/hf-logo-pirate.svg" class="fa-stack-1x fa-inverse" style="width: 1.15em;">
               </span>
             </a>
           </li>
-          {% endif %}                
+          {% endif %}
+          <li class="list-inline-item">
+            <a href="/assets/resume.pdf" target="_blank" title="Resume">
+              <img src="/img/resume.png" alt="Resume" style="width: 2em;">
+            </a>
+          </li>             
         </ul>
         <p class="copyright text-muted">Copyright &copy; {{ site.author }} {{ 'now' | date: "%Y" }}</p>
       </div>
