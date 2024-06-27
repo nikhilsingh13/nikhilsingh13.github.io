@@ -1,6 +1,21 @@
 ---
 layout: default
+title: Posts
 ---
+
+{% if site.posts.size == 0 %}
+<div class="no-posts">
+  <h2>More posts coming soon!</h2>
+  <p>Check out my <a href="https://github.com/nikhilsingh13">GitHub account</a> for the latest updates and projects.</p>
+</div>
+{% else %}
+  {% for post in site.posts %}
+  <article class="post">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p>{{ post.excerpt }}</p>
+  </article>
+  {% endfor %}
+{% endif %}
 
 <!-- Page Header -->
 {% if page.background %}
