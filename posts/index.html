@@ -5,8 +5,6 @@ background: '/img/bg-post.jpg'
 ---
 
 <!-- Custom message -->
-<p>More posts coming soon!</p>
-<p>Check out my <a href="https://github.com/nikhilsingh13">GitHub account</a> for the latest updates and projects.</p>
 
 {% for post in paginator.posts %}
 
@@ -32,6 +30,9 @@ background: '/img/bg-post.jpg'
 <hr>
 
 {% endfor %}
+
+<p>More posts coming soon!</p>
+<p>Check out my <a href="https://github.com/nikhilsingh13">GitHub account</a> for the latest updates and projects.</p>
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
