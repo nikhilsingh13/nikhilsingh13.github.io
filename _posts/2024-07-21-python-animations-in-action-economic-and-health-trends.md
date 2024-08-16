@@ -4,8 +4,16 @@ title: "Python Animations in Action: Economic and health trends"
 date: 2024-07-21
 author: Nikhil Singh
 ---
+## Introduction
+Ever wondered if money could buy health? Well, it might not buy happiness directly, but it could add a few years to your life! In this post, we're diving into the interesting connection between a nation's wealth and its health. 
 
-Python animations: content of your post here, include any images, videos, or links to your Jupyter notebook if you're hosting it elsewhere.
+I am going to use Python animations and GapMinder datato show just how closely the world's GDP correlates with life expectancy. Probably, we'll find some surprising patterns!
 
-Example: 
-To see the animations, visit [Jupyter Notebook on GitHub](link-to-your-notebook).
+## Data & tools
+{Pending}
+
+## Analysis (with code)
+{Pending}
+
+## Conclusion
+{Pending}
