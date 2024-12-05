@@ -32,3 +32,16 @@ layout: default
       </div>
     </div>
   </div>
+
+  {% if page.title == "Contact Me" %}
+  <script>
+  window.addEventListener('load', function() {
+      const iframe = document.querySelector('iframe');
+      iframe.onload = function() {
+          setTimeout(() => {
+              iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+          }, 500);
+      };
+  });
+  </script>
+  {% endif %}
