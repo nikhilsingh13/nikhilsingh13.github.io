@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Understanding Python's `yield` and Generators"
+title:  "Understanding Python's "yield" and Generators"
 date:   2024-12-10 15:00:00 +0100
 categories: python generators
+background: '/img/python-yield.png'
 ---
 
 # Python's `yield` simplified: Deep Dive into Generators
@@ -105,13 +106,14 @@ Generators and the `yield` keyword are powerful tools in Python's arsenal, provi
 
 Experiment with these examples and explore how you can integrate generators into your Python projects for better performance and scalability.
 
-Have questions or insights about using `yield`? [Let me know](https://nikhilsingh.io/contact)
+Have questions or insights about using `yield`? <a href="https://nikhilsingh.io/contact" target="_blank">Let me know</a>
 
 [![Notebook](https://mybinder.org/badge_logo.svg)](https://github.com/nikhilsingh13/PythonHacks/blob/main/blog-work/yield_fn_work/blogpost_code.ipynb)
 
-### References
+
+## References
 For further exploration, here are some great links to check:
-1. [RealPython: Understanding yield](https://realpython.com/introduction-to-python-generators/#understanding-the-python-yield-statement)
-2. [G4G: Python yield keyword](https://www.geeksforgeeks.org/python-yield-keyword/)
-3. [Datacamp: yield](https://www.datacamp.com/tutorial/yield-python-keyword)
-4. [Python doc](https://docs.python.org/3/reference/expressions.html#yield-expressions)
+1. <a href="https://realpython.com/introduction-to-python-generators/#understanding-the-python-yield-statement" target="_blank">RealPython: Understanding yield</a>
+2. <a href="https://www.geeksforgeeks.org/python-yield-keyword/" target="_blank">G4G: Python yield keyword</a>
+3. <a href="https://www.datacamp.com/tutorial/yield-python-keyword" target="_blank">Datacamp: yield</a>
+4. <a href="https://docs.python.org/3/reference/expressions.html#yield-expressions" target="_blank">Python doc</a>
