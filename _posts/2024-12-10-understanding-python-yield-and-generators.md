@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Understanding Python's "yield" and Generators"
+title:  "Understanding Python's 'yield' and Generators"
 date:   2024-12-10 15:00:00 +0100
 categories: python generators
 background: '/img/python-yield.png'
 ---
 
-# Python's "yield" simplified: Deep Dive into Generators
+# Python's 'yield' simplified: Deep Dive into Generators
 
 ## Table of Contents
 - [Introduction](#introduction)
