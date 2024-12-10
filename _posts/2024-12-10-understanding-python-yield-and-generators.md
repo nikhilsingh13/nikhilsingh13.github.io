@@ -8,6 +8,8 @@ background: '/img/python-yield.png'
 
 # Python's 'yield' simplified: Deep Dive into Generators
 
+-----------------------------
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Basic Generators: The Fundamentals](#basic-generators-the-fundamentals)
