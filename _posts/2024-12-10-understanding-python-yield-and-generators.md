@@ -6,7 +6,7 @@ categories: python generators
 background: '/img/python-yield.png'
 ---
 
-# Python's `yield` simplified: Deep Dive into Generators
+# Python's "yield" simplified: Deep Dive into Generators
 
 ## Table of Contents
 - [Introduction](#introduction)
