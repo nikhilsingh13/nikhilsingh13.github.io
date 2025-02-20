@@ -14,7 +14,11 @@ huggingface_username: nikhilsingh
 google_analytics: G-BS4J90KXGK
 
 # Build settings
-markdown:           kramdown
+theme: minima
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
 paginate:           5
 paginate_path:      "/posts/page:num/"
 plugins:

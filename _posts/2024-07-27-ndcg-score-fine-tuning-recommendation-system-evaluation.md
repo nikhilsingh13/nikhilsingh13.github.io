@@ -28,34 +28,30 @@ NDCG (Normalized Discounted Cumulative Gain) is a ranking-centric metric. Unlike
 ---
 
 ## Basic Fundamentals: DCG & IDCG
-- **DCG**: Summation of relevance scores, discounted by log of the position.   
-$$
-\begin{aligned}
-  & DCG = \sum_{i=1}^{k} \frac{rel_i}{\log_2(i+1)}
-\end{aligned}
-$$
+- **DCG**: Summation of relevance scores, discounted by log of the position.
+
+$$DCG = \sum_{i=1}^{k} \frac{rel_i}{\log_2(i+1)}$$
+
 - **IDCG**: Ideal DCG—what your DCG would be if all relevant items were at the top.  
 
 - **NDCG**: Normalizes results for easy comparison across different datasets.
-$$
-\begin{aligned}
-     NDCG = (\frac{DCG}{IDCG}).
-\end{aligned}
-$$
+
+$$NDCG = \frac{DCG}{IDCG}$$
+
 ---
 
 ## Hello World Example: Simple NDCG Demo
 *How a small difference in ordering affects NDCG.*
 
-|---------------------+----+------------|
-| Scenario           | k  | NDCG Score |
-|---------------------|----|------------|
-| Bad Predictions    | 5  | 0.6957     |
-| Better Predictions | 5  | 0.7182     |
-| Ideal Ranking      | 5  | 1.0000     |
-| Truncated (k=4)    | 4  | 0.3520     |
-| Tied Scores        | 5  | 0.5000     |
-|---------------------+----+------------|
+```
+Scenario              k   NDCG Score
+------------------------------------
+Bad Predictions       5    0.6957
+Better Predictions    5    0.7182
+Ideal Ranking         5    1.0000
+Truncated (k=4)       4    0.3520
+Tied Scores           5    0.5000
+```
 
 
 🔗 **[Open NDCG Sample Notebook](https://github.com/nikhilsingh13/PythonHacks/blob/main/blog-work/ndcg-score/ndcg_sample_nb1.ipynb)**
