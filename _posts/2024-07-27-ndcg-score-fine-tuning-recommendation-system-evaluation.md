@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "NDCG Score: Fine-Tuning Recommendation System Evaluation"
-date: 2024-07-27
+date: 2025-02-20
 categories: 
 author: Nikhil Singh
 background: '/img/ndcg-score.jpg'
@@ -28,20 +28,29 @@ NDCG (Normalized Discounted Cumulative Gain) is a ranking-centric metric. Unlike
 ---
 
 ## Basic Fundamentals: DCG & IDCG
-- **DCG**: Summation of relevance scores, discounted by log of the position.  
-  \[
-    DCG = \sum_{i=1}^{k} \frac{rel_i}{\log_2(i+1)}
-  \]
+- **DCG**: Summation of relevance scores, discounted by log of the position.   
+
+  $DCG = \sum_{i=1}^{k} \frac{rel_i}{\log_2(i+1)}$
+
 - **IDCG**: Ideal DCG—what your DCG would be if all relevant items were at the top.  
-- **NDCG**: \(\frac{DCG}{IDCG}\). Normalizes results for easy comparison across different datasets.
+
+- **NDCG**: Normalizes results for easy comparison across different datasets.    
+     $NDCG = (\frac{DCG}{IDCG}$).
 
 ---
 
 ## Hello World Example: Simple NDCG Demo
-- Take a tiny dataset (e.g., user’s top-5 movie ratings).  
-- Compute DCG, then IDCG.  
-- Show how a small difference in ordering affects NDCG.  
-- [Jupyter Notebook on GitHub](#) (link to your example).
+*How a small difference in ordering affects NDCG.*
+| Scenario            | k  | NDCG Score |
+|---------------------|----|------------|
+| Bad Predictions    | 5  | 0.6957     |
+| Better Predictions | 5  | 0.7182     |
+| Ideal Ranking      | 5  | 1.0000     |
+| Truncated (k=4)    | 4  | 0.3520     |
+| Tied Scores        | 5  | 0.5000     |
+
+🔗 **[Open NDCG Sample Notebook on Binder](https://mybinder.org/v2/gh/nikhilsingh13/PythonHacks/HEAD?filepath=blog-work/ndcg-score/ndcg_sample_nb1.ipynb)**
+
 
 ---
 
@@ -80,4 +89,4 @@ NDCG is not just a metric—it’s a lens through which you see ranking performa
 ## References
 - [Research Paper: NDCG](#)
 - [MovieLens Dataset](https://grouplens.org/datasets/movielens/)
-- [Your Jupyter Notebook / GitHub Repo](#)
+- [Jupyter Notebook / GitHub Repo](#)
