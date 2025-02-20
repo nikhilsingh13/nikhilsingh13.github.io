@@ -49,7 +49,7 @@ NDCG (Normalized Discounted Cumulative Gain) is a ranking-centric metric. Unlike
 | Truncated (k=4)    | 4  | 0.3520     |
 | Tied Scores        | 5  | 0.5000     |
 
-🔗 **[Open NDCG Sample Notebook on Binder](https://mybinder.org/v2/gh/nikhilsingh13/PythonHacks/HEAD?filepath=blog-work/ndcg-score/ndcg_sample_nb1.ipynb)**
+🔗 **[Open NDCG Sample Notebook](https://github.com/nikhilsingh13/PythonHacks/blob/main/blog-work/ndcg-score/ndcg_sample_nb1.ipynb)**
 
 
 ---
