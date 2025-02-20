@@ -82,11 +82,15 @@ NDCG (Normalized Discounted Cumulative Gain) is a ranking-centric metric. Unlike
 ---
 
 ## Conclusion
-NDCG is not just a metric—it’s a lens through which you see ranking performance, user engagement, and business outcomes. Whether you’re a Data Science Lead or an ML-savvy Product Manager, adopting NDCG can transform your recommendation strategy.
+NDCG is not just a metric—it’s a direct KPI through which one can see 
+- ranking performance
+- user engagement
+
+and can connect business outcomes.
 
 ---
 
 ## References
-- [Research Paper: NDCG](#)
+- 🔗 [NDCG paper](https://arxiv.org/abs/1304.6480)
 - [MovieLens Dataset](https://grouplens.org/datasets/movielens/)
 - [Jupyter Notebook / GitHub Repo](#)
