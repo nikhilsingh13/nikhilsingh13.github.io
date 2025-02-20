@@ -14,7 +14,7 @@ huggingface_username: nikhilsingh
 google_analytics: G-BS4J90KXGK
 
 # Build settings
-theme: minima
+remote_theme: mmistakes/minimal-mistakes
 markdown: kramdown
 kramdown:
   input: GFM
