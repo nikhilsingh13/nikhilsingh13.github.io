@@ -61,7 +61,9 @@ Tied Scores           5    0.5000
 
 ## Handling Larger Systems: Implicit vs. Explicit Data
 1. **Explicit**: Ratings, likes, or feedback forms. NDCG evaluates how well you’re ranking items users explicitly rated highly.  
-2. **Implicit**: Clicks, dwell time, or purchases. NDCG helps interpret real-world engagement signals, highlighting the top actions you most want to rank first.
+2. **Implicit**: Clicks, spend time (behavioural data), or purchases. NDCG helps interpret real-world engagement signals, highlighting the top actions you most want to rank first.
+
+🔗 **[NDCG score calculation on implicit dataset](https://github.com/nikhilsingh13/PythonHacks/blob/main/blog-work/ndcg-score/implicit_dataset_ndcg_calc_nb2.ipynb)**
 
 ---
 
