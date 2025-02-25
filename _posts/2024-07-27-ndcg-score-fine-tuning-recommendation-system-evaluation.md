@@ -23,7 +23,12 @@ background: '/img/ndcg-score.jpg'
 ---
 
 ## Introduction: Why NDCG?
-NDCG (Normalized Discounted Cumulative Gain) is a ranking-centric metric. Unlike accuracy-based approaches, it emphasizes the position of relevant items, crucial for user satisfaction in recommender systems.
+NDCG (Normalized Discounted Cumulative Gain) is a ranking-centric metric. Unlike accuracy-based approaches, it emphasizes the position of relevant items, crucial to understand user satisfaction in recommender systems.
+
+- `NDCG score` also explains how well the top-N recommendations match the actual user interactions.
+- `DCG` explains the *gain* of items based on positions. `NDCG` normalises it.
+
+From a ML lead point of view, a higher NDCG means users see more relevant items up front. It is consistent with other KPIs like engagement and conversion.
 
 ---
 
