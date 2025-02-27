@@ -66,9 +66,28 @@ Tied Scores           5    0.5000
 
 ## Handling Larger Systems: Implicit vs. Explicit Data
 1. **Explicit**: Ratings, likes, or feedback forms. NDCG evaluates how well you’re ranking items users explicitly rated highly.  
+
 2. **Implicit**: Clicks, spend time (behavioural data), or purchases. NDCG helps interpret real-world engagement signals, highlighting the top actions you most want to rank first.
 
-🔗 **[NDCG score calculation on implicit dataset](https://github.com/nikhilsingh13/PythonHacks/blob/main/blog-work/ndcg-score/implicit_dataset_ndcg_calc_nb2.ipynb)**
+🔗 **[Script for NDCG score calculation on implicit dataset & comparison](https://github.com/nikhilsingh13/PythonHacks/blob/main/blog-work/ndcg-score/pyspark_ndcg_implicit.py)**
+
+Once you check / run the script preparing a linear rec-sys model on `lastfm` data available publicly ([here](http://mtg.upf.edu/static/datasets/last.fm/lastfm-dataset-360K.tar.gz)).
+
+The results are:    
+
+    - NDCG@10 - All Products: 0.0025                                                  
+    - NDCG@10 - Top Played Products Only: 0.0022
+
+> This is not a good NDCG. A low NDCG score suggests weak recommendation quality. This is expected because of high sparsity and noise in implicit datasets. Also, the model we trained is a linear ALS model.
+
+> ALS: a matrix factorisation model which assumes structured rating behaviour. 
+    In an implicit dataset (clicks, plays, purchases, etc.), such structure is not usually captured.
+
+An improvement could be to try:
+
+1. Weighted confidence-based ALS
+2. Hybrid model
+3. Noise filtering before trying ALS
 
 ---
 
