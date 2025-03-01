@@ -71,62 +71,19 @@ Tied Scores           5    0.5000
 
 - `surpriselib` is used for trying different algorithm.
 
-<table>
-  <thead>
-    <tr>
-      <th>Algorithm</th>
-      <th>NDCG@10</th>
-      <th>Runtime (s)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>SVD</td>
-      <td>0.0470</td>
-      <td>3.35</td>
-    </tr>
-    <tr>
-      <td>SVD++</td>
-      <td>0.0692</td>
-      <td>48.73</td>
-    </tr>
-    <tr>
-      <td>NMF</td>
-      <td>0.0062</td>
-      <td>3.02</td>
-    </tr>
-    <tr>
-      <td>KNNBasic</td>
-      <td>0.0004</td>
-      <td>28.34</td>
-    </tr>
-    <tr>
-      <td>KNNWithMeans</td>
-      <td>0.0016</td>
-      <td>31.12</td>
-    </tr>
-    <tr>
-      <td>KNNWithZScore</td>
-      <td>0.0014</td>
-      <td>33.73</td>
-    </tr>
-    <tr>
-      <td>KNNBaseline</td>
-      <td>0.0010</td>
-      <td>37.54</td>
-    </tr>
-    <tr>
-      <td>SlopeOne</td>
-      <td>0.0015</td>
-      <td>23.65</td>
-    </tr>
-    <tr>
-      <td>CoClustering</td>
-      <td>0.0058</td>
-      <td>2.91</td>
-    </tr>
-  </tbody>
-</table>
+```
+Algorithm       NDCG@10  Runtime (s)
+--------------------------------------
+SVD             0.0470   3.35
+SVD++           0.0692   48.73
+NMF             0.0062   3.02
+KNNBasic        0.0004   28.34
+KNNWithMeans    0.0016   31.12
+KNNWithZScore   0.0014   33.73
+KNNBaseline     0.0010   37.54
+SlopeOne        0.0015   23.65
+CoClustering    0.0058   2.91
+```
 
 2. **Implicit**: Clicks, spend time (behavioural data), or purchases. NDCG helps interpret real-world engagement signals, highlighting the top actions you most want to rank first.
 
