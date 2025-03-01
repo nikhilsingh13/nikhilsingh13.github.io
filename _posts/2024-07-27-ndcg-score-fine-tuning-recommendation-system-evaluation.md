@@ -67,6 +67,22 @@ Tied Scores           5    0.5000
 ## Handling Larger Systems: Implicit vs. Explicit Data
 1. **Explicit**: Ratings, likes, or feedback forms. NDCG evaluates how well you’re ranking items users explicitly rated highly.  
 
+🔗 **[Script for NDCG score on explicit dataset & algo comparison](https://github.com/nikhilsingh13/PythonHacks/blob/main/blog-work/ndcg-score/surprise_explicit_ndcg.py)**
+
+- `surpriselib` is used for trying different algorithm.
+
+| Algorithm       | NDCG@10 | Runtime (s) |
+|-----------------|---------|-------------|
+| SVD             | 0.0470  | 3.35       |
+| SVD++           | 0.0692  | 48.73       |
+| NMF             | 0.0062  | 3.02       |
+| KNNBasic        | 0.0004  | 28.34       |
+| KNNWithMeans    | 0.0016  | 31.12       |
+| KNNWithZScore   | 0.0014  | 33.73       |
+| KNNBaseline     | 0.0010  | 37.54       |
+| SlopeOne        | 0.0015  | 23.65       |
+| CoClustering    | 0.0058  | 2.91       |
+
 2. **Implicit**: Clicks, spend time (behavioural data), or purchases. NDCG helps interpret real-world engagement signals, highlighting the top actions you most want to rank first.
 
 🔗 **[Script for NDCG score calculation on implicit dataset & comparison](https://github.com/nikhilsingh13/PythonHacks/blob/main/blog-work/ndcg-score/pyspark_ndcg_implicit.py)**
