@@ -15,15 +15,14 @@ background: '/img/ndcg-score.jpg'
 3. [Hello World Example: Simple NDCG Demo](#hello-world-example-simple-ndcg-demo)
 4. [Handling Larger Systems: Implicit vs. Explicit Data](#handling-larger-systems-implicit-vs-explicit-data)
 5. [Managerial Perspective: Leveraging NDCG Insights](#managerial-perspective-leveraging-ndcg-insights)
-6. [Real-Life Use Case: E-Commerce Recommendations](#real-life-use-case-e-commerce-recommendations)
-7. [New Metrics: Hitrate NDCG & Beyond](#new-metrics-hitrate-ndcg--beyond)
-8. [Conclusion](#conclusion)
-9. [References](#references)
+6. [New Metrics: Hitrate NDCG & Beyond](#new-metrics-hitrate-ndcg--beyond)
+7. [Conclusion](#conclusion)
+8. [References](#references)
 
 ---
 
 ## Introduction: Why NDCG?
-NDCG (Normalized Discounted Cumulative Gain) is a ranking-centric metric. Unlike accuracy-based approaches, it emphasizes the position of relevant items, crucial to understand user satisfaction in recommender systems.
+NDCG (Normalized Discounted Cumulative Gain) is a ranking-centric metric. Unlike accuracy-based approaches, it emphasizes the **position of relevant items**, crucial to understand user satisfaction in recommender systems.
 
 - `NDCG score` also explains how well the top-N recommendations match the actual user interactions.
 - `DCG` explains the *gain* of items based on positions. `NDCG` normalises it.
@@ -36,6 +35,15 @@ From a ML lead point of view, a higher NDCG means users see more relevant items 
 - **DCG**: Summation of relevance scores, discounted by log of the position.
 
 $$DCG = \sum_{i=1}^{k} \frac{rel_i}{\log_2(i+1)}$$
+
+```
+def dcg_at_k(relevance, k):
+    """Compute DCG@K"""
+
+    relevance = np.asarray(relevance)[:k]
+    dcg = np.sum(relevance / np.log2(np.arange(2, relevance.size + 2)))
+    return dcg
+```
 
 - **IDCG**: Ideal DCG—what your DCG would be if all relevant items were at the top.  
 
@@ -70,6 +78,9 @@ Tied Scores           5    0.5000
     🔗 **[Script for NDCG score on explicit dataset & algo comparison](https://github.com/nikhilsingh13/PythonHacks/blob/main/blog-work/ndcg-score/surprise_explicit_ndcg.py)**
 
     - `surpriselib` is used for trying different algorithm.
+    - SVD++ performed better but took most time to run.
+    - Technically, NDCG scores calculated for all algorithms suggest that recommendations are not great.
+        - NDCG score is an offline metric, it doesn't replace any online metrics (KPIs) which needs to be calculated through an A/B test.
 
     ```
     Algorithm       NDCG@10  Runtime (s)
@@ -116,13 +127,6 @@ An improvement could be to try:
 
 ---
 
-## Real-Life Use Case: E-Commerce Recommendations
-- **Example**: Online retailer boosting conversions by rearranging product listings.  
-- **Process**: Use NDCG to measure whether the “top recommended products” truly match user interest.  
-- **Result**: Data-driven, consistent improvements in A/B tests—clear wins for the product team.
-
----
-
 ## New Metrics: Hitrate NDCG & Beyond
 - **Hitrate NDCG**: A blend of immediate user “hits” and the ranking-based viewpoint.  
 - **Other Variants**: MRR (Mean Reciprocal Rank), MAP (Mean Average Precision), etc.  
@@ -142,4 +146,3 @@ and can connect business outcomes.
 ## References
 - 🔗 [NDCG paper](https://arxiv.org/abs/1304.6480)
 - [MovieLens Dataset](https://grouplens.org/datasets/movielens/)
-- [Jupyter Notebook / GitHub Repo](#)
