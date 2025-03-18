@@ -4,4 +4,7 @@ main:
   - title: "Contact"
     url: /contact/
   - title: "Resume"
-    url: /assets/Nikhil Singh.pdf
+    url: /assets/Nikhil-Singh.pdf
+    external: true
+  - title: "Projects"
+    url: /projects/
