@@ -33,11 +33,11 @@ Static charts often miss the small details or fail to share the complete story. 
 - **Data Manipulation:**  
   1. Life expectancy (birth) - original dataset
 
-| Country Name | Country Code | Indicator Name                          | 1960   | 1961   | 1962   | 2000   | 2001   | 2002   | 2003   | 2022   |
-|--------------|--------------|-----------------------------------------|--------|--------|--------|--------|--------|--------|--------|--------|
-| Dominica     | DMA          | Life expectancy at birth, total (years) | 59.026 | 59.949 | 61.741 | 72.693 | 71.713 | 72.340 | 71.438 | 72.981 |
-| Lithuania    | LTU          | Life expectancy at birth, total (years) | 69.847 | 70.103 | 69.095 | 70.909 | 71.220 | 71.571 | 72.020 | 75.793 |
-| Ecuador      | ECU          | Life expectancy at birth, total (years) | 53.364 | 53.895 | 54.401 | 72.839 | 73.240 | 73.613 | 73.975 | 77.894 |
+  | Country Name | Country Code | Indicator Name                          | 1960   | 1961   | 1962   | 2000   | 2001   | 2002   | 2003   | 2022   |
+  |--------------|--------------|-----------------------------------------|--------|--------|--------|--------|--------|--------|--------|--------|
+  | Dominica     | DMA          | Life expectancy at birth, total (years) | 59.026 | 59.949 | 61.741 | 72.693 | 71.713 | 72.340 | 71.438 | 72.981 |
+  | Lithuania    | LTU          | Life expectancy at birth, total (years) | 69.847 | 70.103 | 69.095 | 70.909 | 71.220 | 71.571 | 72.020 | 75.793 |
+  | Ecuador      | ECU          | Life expectancy at birth, total (years) | 53.364 | 53.895 | 54.401 | 72.839 | 73.240 | 73.613 | 73.975 | 77.894 |
 
 - **Python Libraries:**  
   - [Plotly](https://plotly.com/python/) for interactive animations  

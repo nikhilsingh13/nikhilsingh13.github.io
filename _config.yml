@@ -3,6 +3,7 @@ email:              nikhilsingh2009@gmail.com
 description:        "I solve problems."
 baseurl:            ""
 url:                "https://nikhilsingh.io"
+favicon:            /img/nikhil-favicon.png
 
 author:
   name: "Nikhil Singh"
