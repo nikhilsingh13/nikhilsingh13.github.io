@@ -1,0 +1,30 @@
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    {% if site.author.email %}
+      <li><a href="mailto:{{ site.author.email }}" target="_blank"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+    {% endif %}
+    {% if site.author.twitter %}
+      <li><a href="https://twitter.com/{{ site.author.twitter }}" target="_blank"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+    {% endif %}
+    {% if site.author.linkedin %}
+      <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+    {% endif %}
+    {% if site.author.github %}
+      <li><a href="https://github.com/{{ site.author.github }}" target="_blank"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    {% endif %}
+    {% if site.author.huggingface %}
+  <li><a href="https://huggingface.co/{{ site.author.huggingface }}" target="_blank"><i class="fa-stack-1x fa-inverse"></i>
+    <img src="/img/hf-logo-pirate.svg" style="width: 1em;"> Hugging Face</a></li>
+    {% endif %}
+    {% if site.author.goodreads %}
+      <li><a href="https://goodreads.com/{{ site.author.goodreads }}" target="_blank"><i class="fab fa-fw fa-goodreads" aria-hidden="true"></i> Goodreads</a></li>
+    {% endif %}
+    {% if site.author.kaggle %}
+      <li><a href="https://www.kaggle.com/{{ site.author.kaggle }}" target="_blank"><i class="fab fa-fw fa-kaggle" aria-hidden="true"></i> Kaggle</a></li>
+    {% endif %}
+  </ul>
+</div>
+
+<div class="page__footer-copyright">
+  &copy; {{ site.time | date: '%Y' }} {{ site.title }}. Powered by <a href="https://jekyllrb.com">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/">Minimal Mistakes</a>.
+</div>

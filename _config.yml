@@ -1,0 +1,61 @@
+title:              Nikhil Singh
+email:              nikhilsingh2009@gmail.com
+description:        "I solve problems."
+baseurl:            ""
+url:                "https://nikhilsingh.io"
+
+author:
+  name: "Nikhil Singh"
+  email: "nikhilsingh2009@gmail.com"
+  twitter: "nikhilsingh_1"
+  github: "nikhilsingh13"
+  linkedin: "singh-nikhil"
+  huggingface: "nikhilsingh"
+  goodreads: "nikhilsingh"
+  kaggle: "singhnikhil"
+
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "default"
+
+head_scripts:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+
+paginate: 5
+paginate_path: "/posts/page:num/"
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+# Clean navigation exactly how you want
+header_pages:
+  - about.html
+  - contact.html
+
+include:
+  - _pages
+
+exclude:
+  - docs
+  - test
+  - README.md
+  - CHANGELOG.md
+  - screenshot.png
+  - screenshot-layouts.png
+  - staticman.yml
+  - Rakefile
+  - minimal-mistakes-jekyll.gemspec
+  - package.json
+  - package-lock.json
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-BS4J90KXGK"
