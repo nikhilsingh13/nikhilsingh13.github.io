@@ -11,6 +11,7 @@ author_profile: false
 toc: true
 toc_label: "Contents"
 toc_icon: "list"
+classes: wide
 ---
 
 # Python's 'yield' simplified: Deep Dive into Generators
