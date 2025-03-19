@@ -1,12 +1,14 @@
 ---
 layout: single
-title: "Beyond Static Charts: Animation explaining hidden relation b/w Wealth and Health!"
+title: "Beyond Static Charts"
 date: 2025-03-17
 author: "Nikhil Singh"
+excerpt: Animation explaining hidden relation b/w Wealth and Health!.
 header:
   overlay_image: "./img/bg-python-animation.jpg"
-  show_overlay_excerpt: false
+  caption: "[**ClickerHappy**](https://www.pexels.com/photo/disney-mickey-mouse-standing-figurine-42415/)"
 use_math: true
+author_profile: true
 toc: true
 toc_label: "Contents"
 toc_icon: "list"
@@ -52,7 +54,3 @@ Check out the complete Python code 🔗 [here](https://github.com/nikhilsingh13/
 More insights coming soon!
 
 ---
-
-## Other Credits
-
-- Background image by [ClickerHappy](https://www.pexels.com/photo/disney-mickey-mouse-standing-figurine-42415/)

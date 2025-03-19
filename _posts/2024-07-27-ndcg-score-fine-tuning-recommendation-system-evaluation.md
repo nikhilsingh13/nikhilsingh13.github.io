@@ -8,6 +8,7 @@ header:
   overlay_image: '/img/ndcg-score.jpg'
   show_overlay_excerpt: false
 use_math: true
+author_profile: true
 toc: true
 toc_label: "Contents"
 toc_icon: "list"

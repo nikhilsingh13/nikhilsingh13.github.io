@@ -1,0 +1,12 @@
+Nikhil Singh:
+  name        : "Nikhil Singh"
+  bio         : No AI hype, just real solutions.
+  location    : "Stockholm, Sweden"
+  avatar      : "/img/avatar.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:nikhilsingh2009@gmail.com"
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/nikhilsingh13"

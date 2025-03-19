@@ -7,6 +7,7 @@ header:
   overlay_image: '/img/python-yield.png'
   show_overlay_excerpt: false
 use_math: true
+author_profile: false
 toc: true
 toc_label: "Contents"
 toc_icon: "list"
