@@ -27,6 +27,9 @@ Static charts often miss the small details or fail to share the complete story. 
 
 *Do you know that in 2003, Luxembourg's GDP per capita was 8x India's, and by 2022, it was 12x? Yet, the life expectancy gap narrowed by 1.5 years.*
 
+![Luxembourg & India]({{ site.url }}{{ site.baseurl }}/assets/gifs/gdp_life_exp_Lux_Ind.gif)
+*<span style="display: block; text-align: center; margin-top: 0.5rem; font-style: italic; color: #666;">Luxembourg's wealth surge vs India's health gains (2003-2022)</span>*{: .text-center}
+
 ## Data & Tools
 
 ### **Datasets**  
