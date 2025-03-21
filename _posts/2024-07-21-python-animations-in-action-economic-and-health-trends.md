@@ -85,9 +85,9 @@ Static charts often miss the small details or fail to share the complete story. 
 ## Analysis (with code)
 
 Through 20 years of data (2003-2022), three patterns emerged:
-1. **Stark inequalities**: The rich-poor health gap persists
-2. **Diminishing returns**: Health gains slow down after certain wealth levels
-3. **Outliers**: Some nations punch above their weight
+1. **Stark inequalities**: The rich-poor health gap persists.
+2. **Diminishing returns**: Health gains slow down after certain wealth levels.
+3. **Outliers**: Some nations punch above their weight.
 
 ### The Big Players
 
@@ -112,10 +112,10 @@ The notebook includes both `matplotlib` and `plotly` animation code, along with 
 ## Conclusion
 
 While wealth enables health investments, the relationship isn't linear. Two key takeaways:  
-1. **Critical threshold**: ~$5k GDP/capita brings biggest health jumps  
+1. **Critical threshold**: ~$5k GDP/capita brings biggest health jumps.
 2. **Post-$30k plateau:** Beyond this point, additional wealth has diminishing health returns. 
 
 This was just one lens on how data storytelling can surface deeper insights.  
 If you're presenting to decision-makers, **show trends that matter, but don't lose them in the glitter**.
 
-More experiments on the way 🚀
+More experiments on the way! 🚀
