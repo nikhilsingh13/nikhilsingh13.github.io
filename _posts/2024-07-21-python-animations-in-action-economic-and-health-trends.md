@@ -3,7 +3,7 @@ layout: single
 title: "Beyond Static Charts"
 date: 2025-03-17
 author: "Nikhil Singh"
-excerpt: Animation explaining hidden relation b/w Wealth and Health!.
+excerpt: Animation explaining the hidden relationship between wealth and health.
 header:
   overlay_image: "./img/bg-python-animation.jpg"
   caption: "[**ClickerHappy**](https://www.pexels.com/photo/disney-mickey-mouse-standing-figurine-42415/)"
@@ -19,7 +19,7 @@ classes: wide
 
 Ever wondered if money could buy health? Well, it might not buy happiness directly, but it could add a few years to your life! In this post, we're diving into the interesting connection between a nation's wealth and its health.
 
-I am going to use Python animations and World Bank data to show how closely the world's GDP correlates with life expectancy. Probably, we'll find some interesting patterns!
+I am going to use Python animations and World Bank data to show how closely the world's GDP correlates with life expectancy. We might find some interesting patterns!
 
 *`GDP per capita`* & *`Life Expectancy`* are correlated. While preparing these two datasets for the last 20 years (2003 to 2022), I discovered interesting inequalities, diminishing returns, and outliers.
 
@@ -27,8 +27,12 @@ Static charts often miss the small details or fail to share the complete story. 
 
 *Do you know that in 2003, Luxembourg's GDP per capita was 8x India's, and by 2022, it was 12x? Yet, the life expectancy gap narrowed by 1.5 years.*
 
-![Luxembourg & India]({{ site.url }}{{ site.baseurl }}/assets/gifs/gdp_life_exp_Lux_Ind.gif)
-*<span style="display: block; text-align: center; margin-top: 0.5rem; font-style: italic; color: #666;">Luxembourg's wealth surge vs India's health gains (2003-2022)</span>*{: .text-center}
+![Luxembourg & India]({{ site.url }}{{ site.baseurl }}/assets/gifs/lux_ind.gif)
+*<span style="display: block; text-align: center; margin-top: 0.5rem; font-style: italic; color: #666;">Luxembourg's wealth surge vs India's health gains (2003–2022)</span>*{: .text-center}
+
+> Obviously, you can argue that Luxembourg is already rich and India still has a long way to go as a developing nation — and you'd be right.
+> 
+> The point I want to make here is that life expectancy tends to **plateau** once a country reaches a decent GDP per capita.
 
 ## Data & Tools
 
@@ -74,15 +78,44 @@ Static charts often miss the small details or fail to share the complete story. 
 | Grenada                                | GRD          | 2009 | 6932.564722      | 75.036000       | country        | False    |
 
 - **Python Libraries:**  
-  - [Plotly](https://plotly.com/python/) for interactive animations  
-  - [Pandas](https://pandas.pydata.org/) for data handling  
+  - [Plotly](https://plotly.com/python/) for interactive animations.
+  - [matplotlib.animation](https://matplotlib.org/stable/api/animation_api.html) for simple animations.
+  - [Pandas](https://pandas.pydata.org/) for data handling.
 
 ## Analysis (with code)
 
-Check out the complete Python code 🔗 [here](https://github.com/nikhilsingh13/PythonHacks/blob/main/blog-work/python_animations/py-animation-gdp-lifeexp.ipynb).
+Through 20 years of data (2003-2022), three patterns emerged:
+1. **Stark inequalities**: The rich-poor health gap persists
+2. **Diminishing returns**: Health gains slow down after certain wealth levels
+3. **Outliers**: Some nations punch above their weight
+
+### The Big Players
+
+![Top 5 economies (until 2022)]({{ site.url }}{{ site.baseurl }}/assets/gifs/top-5-economies.gif)
+*<span style="display: block; text-align: center; margin-top: 0.5rem; font-style: italic; color: #666;">Economic heavyweights (2003–2022)</span>*{: .text-center}
+
+### Income Groups Tell All  
+![All income groups (until 2022)]({{ site.url }}{{ site.baseurl }}/assets/gifs/all_income_groups.gif)
+*<span style="display: block; text-align: center; margin-top: 0.5rem; font-style: italic; color: #666;">The wealth-health spectrum</span>*{: .text-center}
+
+
+You can find the complete Python code 🔗 [here](https://github.com/nikhilsingh13/PythonHacks/blob/main/blog-work/python_animations/py-animation-gdp-lifeexp.ipynb).
+
+The notebook includes both `matplotlib` and `plotly` animation code, along with `ipywidgets`. It’s always tricky generating GIFs using plotly. If you need GIFs for your presentation, stick with simplicity over aesthetics. I’d advise going for simplicity over aesthetics. `matplotlib` can simply solve it for you. Also, CXOs and stakeholders rarely care about *aesthetics*.
+> These animations are supposed to support your story.
+
+**Pro Tip**: *Pro Tip: Presenting to execs?*
+- Use matplotlib's simplicity over plotly's flair.
+- Prioritise clear motion over fancy transitions.
+- Follow the 3-second rule: If it isn’t clear in 3 seconds, simplify.
 
 ## Conclusion
 
-More insights coming soon!
+While wealth enables health investments, the relationship isn't linear. Two key takeaways:  
+1. **Critical threshold**: ~$5k GDP/capita brings biggest health jumps  
+2. **Post-$30k plateau:** Beyond this point, additional wealth has diminishing health returns. 
 
----
+This was just one lens on how data storytelling can surface deeper insights.  
+If you're presenting to decision-makers, **show trends that matter, but don't lose them in the glitter**.
+
+More experiments on the way 🚀
