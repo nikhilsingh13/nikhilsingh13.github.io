@@ -18,7 +18,7 @@ classes: wide
 -----------
 
 ## Introduction
-## Motivation: Navigating the GNN Research Landscape
+## Motivation: *Navigating the GNN Research Landscape*
 ## Project Objectives
 ## Architecting the solution
 1. Ollama & Llama3
