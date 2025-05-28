@@ -26,5 +26,4 @@ Please provide feedback on my work.
 Visit my portfolio at: `http://nikhilsingh.io`
 
 Thank you for stopping by!
-
 Nikhil
