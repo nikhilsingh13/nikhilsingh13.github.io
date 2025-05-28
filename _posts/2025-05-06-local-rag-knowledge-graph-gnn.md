@@ -6,7 +6,6 @@ author: "Nikhil Singh"
 excerpt: Interactive knowledge graph visualization of Graph Neural Network (GNN) research papers using Retrieval-Augmented Generation (RAG).
 header:
   overlay_image: "./img/bg4-rag-gnn.png"
-  caption: "**Knowledge Graph **"
 use_math: true
 author_profile: true
 toc: true
