@@ -5,6 +5,9 @@ on:
       - 'resume/**'
       - '.github/workflows/build_resume.yml'
 
+permissions:
+  contents: write
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
