@@ -30,3 +30,12 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+
+*.aux
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+resume/*.pdf

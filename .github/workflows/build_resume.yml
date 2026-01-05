@@ -1,0 +1,30 @@
+name: Build Resume
+on: 
+  push:
+    paths:
+      - 'resume/**'
+      - '.github/workflows/build_resume.yml'
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: resume.tex
+          working_directory: resume/
+      - name: Move PDF to Assets
+        run: |
+          mkdir -p assets/pdf
+          mv resume/resume.pdf assets/pdf/nikhil_singh_resume.pdf
+      - name: Commit and Push PDF
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/pdf/nikhil_singh_resume.pdf
+          git commit -m "Auto-update resume PDF [skip ci]" || echo "No changes to commit"
+          git push
+

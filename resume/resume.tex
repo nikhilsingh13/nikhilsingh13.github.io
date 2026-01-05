@@ -1,0 +1,132 @@
+\documentclass[11pt,a4paper]{article}
+  \usepackage[utf8]{inputenc}
+  \usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+  \usepackage{enumitem}
+  \usepackage{hyperref}
+  \usepackage{titlesec}
+  \usepackage{xcolor}
+
+  % Formatting
+  \pagestyle{empty}
+  \setlist{nolistsep}
+  \titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+  \titleformat{\subsection}{\bfseries}{}{0em}{}
+
+  % Custom colors
+  \definecolor{linkcolor}{RGB}{0,0,139}
+  \hypersetup{
+      colorlinks=true,
+      linkcolor=linkcolor,
+      urlcolor=linkcolor,
+  }
+
+  \begin{document}
+
+  % Header
+  \begin{center}
+      {\LARGE \textbf{Nikhil Singh}} \\[0.3em]
+      {\large AI / Data Science lead} \\[0.5em]
+      Stockholm, Sweden \\[0.3em]
+      \href{mailto:nikhilsingh2009@gmail.com}{nikhilsingh2009@gmail.com} $|$
+      \href{https://linkedin.com/in/singh-nikhil}{singh-nikhil} $|$
+      \href{https://nikhilsingh.io/}{https://nikhilsingh.io/}
+  \end{center}
+
+  \vspace{0.5em}
+
+  % Summary
+  \section*{Summary}
+  Experienced Data Science lead with 11+ years of experience in connecting technical knowledge with business strategy. Skilled in designing scalable ML solutions that enhance customer engagement, optimise operations and drive revenue growth. Competent in mentoring teams, stakeholders alignment and converting complex data into actionable insights. Notable achievements include building personalization features and architecting customer intelligence platforms that unify behavioral and transactional data.
+
+  % Experience
+  \section*{Experience}
+
+  \subsection*{Lead Data Scientist | Klarna Bank AB}
+  \textit{April 2023 - Present}
+  \begin{itemize}[leftmargin=*]
+      \item Led design and deployment of a personalised email "Buy Again" feature, leveraging customer transaction patterns and lifecycle behaviour analysis. Resulted in 27\% increase in purchase rate and 5\% overall purchase volume growth through the Klarna app.
+      \item Built Klarna's first customer-transaction knowledge graph using NER and T5 LLMs, unifying transactional, behavioural, and demographic data to create a 360-degree customer view.
+      \item Led ML strategy for NLP-based document extraction tools in legal-regulatory team, enabling automated insights for compliance workflows.
+      \item Enhanced personalisation engine using deep learning architectures (DSSM) to segment audiences and tailor recommendations across 500M+ SKUs, driving 260-450\% CTR improvements and 18\% DAU (Daily Average Users) growth.
+      \item Integrated customers' favourite merchants into a business index through collaborative filtering and clustering, directly contributing to 36M SEK affiliate revenue growth in Dec 2023.
+      \item Led a team of 5 data scientists, driving innovation and project success.
+  \end{itemize}
+
+  \subsection*{Senior Data Scientist | Klarna Bank AB}
+  \textit{August 2020 - March 2023}
+  \begin{itemize}[leftmargin=*]
+      \item Developed Klarna's first recommender system for product-group suggestions using collaborative filtering techniques.
+      \item Enhanced product normalisation across 98 merchants, establishing Klarna's first product recommendation engine based on user similarities.
+      \item Implemented Klarna's initial OpenAI CLIP-based embeddings model for identifying similar items in the product catalog and determining customer preference categories.
+      \item Led several hackathons and sessions for new graduates to help them learn and get better at machine learning.
+  \end{itemize}
+
+  \subsection*{Senior Data Scientist | o9 Solutions, Inc}
+  \textit{April 2020 - July 2020}
+  \begin{itemize}[leftmargin=*]
+      \item Transformed a prospective client into a confirmed partner by developing a comprehensive AI-driven supply chain solution.
+  \end{itemize}
+
+  \subsection*{Data Scientist | Ascena GIC}
+  \textit{January 2018 - March 2020}
+  \begin{itemize}[leftmargin=*]
+      \item Developed a TensorFlow-based model to forecast store traffic, achieving less than 8\% MAPE daily per store; deployed on GCP using Apache Beam and Airflow.
+      \item Analysed promotional offer impacts on e-commerce and store traffic using SHAP, guiding strategic marketing decisions.
+      \item Developed key models including a Price Elasticity of Demand model to inform pricing strategies, a predictive system for customer transaction dates with a MAE of 4 weeks using Random Survival Trees.
+      \item Improved customer lifetime value predictions by 70\%+ in marketing campaign uplifts.
+  \end{itemize}
+
+  \subsection*{Data Scientist | Diet Code}
+  \textit{December 2016 - December 2017}
+  \begin{itemize}[leftmargin=*]
+      \item Engineered recommendation systems for NewsCase app, boosting engagement by 15\%.
+      \item Developed a Convolutional Neural Network (CNN) for image recognition and classification, and benchmarked machine learning libraries (mlpack, libmf, spark) for matrix factorization efficiency, utilizing Docker to ensure consistent testing environments.
+  \end{itemize}
+
+  \subsection*{Data Scientist | Cognizant Technology Solutions}
+  \textit{May 2016 - December 2016}
+  \begin{itemize}[leftmargin=*]
+      \item Enhanced a text mining search engine for job descriptions at the firm, using stemming and POS tagging to refine search queries, boosting job-description match accuracy from 32\% to 47\%.
+      \item Developed a credit scoring model to predict customer delinquency, employing SMOTE for imputation and combining logistic regression with decision trees for improved prediction accuracy.
+      \item Awarded the Q-3 Spotlight for outstanding performance in the Data Science division, leading a time-series modelling project and managing a team of 5.
+  \end{itemize}
+
+  \subsection*{Software Engineer | Nucleus Software Exports Ltd.}
+  \textit{July 2012 - June 2014}
+  \begin{itemize}[leftmargin=*]
+      \item Project on delinquent customers module handling Big Data \& completed Change Service Requests.
+  \end{itemize}
+
+  % Education
+  \section*{Education}
+
+  \textbf{PGDM / MBA} - Indian Institute of Management - Tiruchirappalli (IIM-T) \hfill 2016
+
+  \textbf{B.Tech (CSE)} - UP Technical University \hfill 2012
+
+  % Skills
+  \section*{Skills \& abilities}
+
+  \textbf{Customer Analytics:} Customer segmentation (RFM, clustering), Lifetime value (CLV) modelling. Churn prediction \& behavioural cohort analysis.
+
+  \textbf{Leadership \& Management:} Proven experience in leading and mentoring data science teams across geographies. Strong strategic planning, decision-making, and project management skills.
+
+  \textbf{Business Acumen:} Ability to translate technical initiatives into measurable business value. Focused on delivering revenue growth and enhanced customer engagement.
+
+  \textbf{Machine Learning:} Experienced with advanced techniques: XGBoost, SHAP for interpretability, dimensionality reduction (UMAP, T-SNE, PCA), and text mining including Named Entity Recognition.
+
+  \textbf{Deep Learning:} Skilled in neural networks, CNNs, RNNs, auto-encoders, and graph neural networks, with expertise in hyper-parameter tuning and optimisation.
+
+  \textbf{Reinforcement Learning:} Temporal-difference learning, Q-learning, Monte Carlo methods, and Markov decision processes.
+
+  \textbf{Recommendation Systems:} Expert in two-tower methods, collaborative filtering, matrix factorisation, content-based approaches, and advanced non-linear recommendation techniques.
+
+  \textbf{Cloud \& DevOps:} Experienced in cloud technologies: AWS/GCP, including deploying and managing SageMaker pipelines.
+
+  \textbf{Tools \& Technologies:} PyTorch, TensorFlow, Python (xgboost, scikit-learn, pandas, numpy, Keras), R (mlr, dplyr, caret), Spark (PySpark), AWS Glue.
+
+  \textbf{Database management:} Neo4j, Pinecone, Amazon Athena, Amazon Redshift, Solr, MongoDB, MySQL
+
+  \textbf{Data Visualization:} D3.js, plotly, lookerstudio
+
+  \end{document}
