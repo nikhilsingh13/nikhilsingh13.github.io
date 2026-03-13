@@ -63,12 +63,10 @@ In the current post and demo, I've mitigated the issue related to figures by sim
 - [Jerry Liu's Thread on Graph RAG](https://twitter.com/jerryjliu0/status/1797057726994092492)
 
 **Tools to Explore:**
-- LlamaIndex - Start here for POCs
-- Neo4j - If you need full graph DB
-- Microsoft GraphRAG - For enterprise synthesis needs
-- Pinecone + metadata filtering - Simple alternative to graphs
+- Neo4j - If you need full graph DB.
+- Microsoft GraphRAG - For enterprise synthesis needs.
+- Pinecone + metadata filtering - Simple alternative to graphs.
 
-
-**Questions or want to discuss your specific use case?** Connect with me on [LinkedIn](https://www.linkedin.com/in/singh-nikhil) or [Twitter](https://twitter.com/nikhilsingh_1).
+**Questions or want to discuss your specific use case?** Connect with me on <a href="https://www.linkedin.com/in/singh-nikhil" target="_blank">LinkedIn</a> or <a href="https://twitter.com/nikhilsingh_1" target="_blank">Twitter</a>.
 
 ---
