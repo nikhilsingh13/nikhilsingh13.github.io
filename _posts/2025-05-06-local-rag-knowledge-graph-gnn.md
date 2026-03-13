@@ -1,9 +1,9 @@
 ---
 layout: single
-title: "Building a Modern Local RAG System with Ollama and LangChain"
-date: 2025-05-06
+title: "Building a Graph RAG Pipeline."
+date: 2026-03-13
 author: "Nikhil Singh"
-excerpt: Interactive knowledge graph visualization of Graph Neural Network (GNN) research papers using Retrieval-Augmented Generation (RAG).
+excerpt: "Building a lightweight agentic workflow using GraphRAG, knowledge graphs & semantic caching."
 header:
   overlay_image: "./img/bg4-rag-gnn.png"
 use_math: true
@@ -14,30 +14,61 @@ toc_icon: "list"
 classes: wide
 ---
 
-# Local RAG implementation on the topic of GNN
------------
-
 ## Introduction
-## Motivation: *Navigating the GNN Research Landscape*
-## Project Objectives
-## Architecting the solution
-1. Ollama & Llama3
-2. LangChain
-3. DuckDB
-4. Streamlit
 
-## Building the GNN Knowledge Graph Pipeline
-1. PDF Text Extraction
-2. Information Extraction: Unveiling Entities and Relationships
-3. Knowledge Graph Construction
+### Graph RAG?
 
-## Retrieval-Augmented Generation (RAG) in Action
+**Graph RAG** takes traditional vector search one step ahead by treating the provided knowledge base as a **network of connected entities** instead of isolated text chunks.
 
-## Interactive Visualization: Exploring the GNN Universe
+**Traditional RAG:**
+```
+Query → Vector Search → Top K chunks → LLM → Answer
+```
 
-## Key Insights and Lessons Learned
+### Workflow
+```
+Query →  Semantic Cache →  (hit)    →  return cached response
+                           (miss)   → Vector Search → Initial nodes
+                                    → Traverse relationships
+                                    → Graph traversal
+                                    → Rerank combined context
+                                    → LLM → Answer
+```
 
-## Codebase: Running locally
-[Codebase](https://github.com/nikhilsingh13/kg-local-rag-gnn)
+### Building Blocks
+#### Step 1: PDF Extraction
 
-## Conclusion and Future Directions
+Cleaning text from academic PDFs, there are a lot of python libraries which can help or automate the process. These libraries struggle with figures, numbers, derivations and coordinates in the text. 
+In the current post and demo, I've mitigated the issue related to figures by simply acknowledging it in system prompt provided to the QnA LLM.
+  
+#### Step-2: Entity extraction
+
+
+## Tech Stack
+- Python 3.14
+- PyMuPDF
+- sentence-transformers
+- DuckDB (VSS)
+- NetworkX
+- HuggingFace Inference API
+- Gradio
+- uv
+
+---
+## Additional Resources
+
+**Learn More:**
+- [LlamaIndex PropertyGraph Guide](https://docs.llamaindex.ai/en/stable/examples/property_graph/property_graph_custom_retriever/)
+- [Microsoft GraphRAG Paper](https://arxiv.org/abs/2404.16130)
+- [Jerry Liu's Thread on Graph RAG](https://twitter.com/jerryjliu0/status/1797057726994092492)
+
+**Tools to Explore:**
+- LlamaIndex - Start here for POCs
+- Neo4j - If you need full graph DB
+- Microsoft GraphRAG - For enterprise synthesis needs
+- Pinecone + metadata filtering - Simple alternative to graphs
+
+
+**Questions or want to discuss your specific use case?** Connect with me on [LinkedIn](https://www.linkedin.com/in/singh-nikhil) or [Twitter](https://twitter.com/nikhilsingh_1).
+
+---
